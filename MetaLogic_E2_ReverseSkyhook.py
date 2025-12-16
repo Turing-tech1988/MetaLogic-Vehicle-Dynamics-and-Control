@@ -125,10 +125,9 @@ def reproduce_fig5_robust():
     # Top plot: Magnitude
     ax1.semilogx(f, mag_none, 'k--', linewidth=1.5, label='No control')
     ax1.semilogx(f, mag_sky, 'k-', linewidth=1.0, alpha=0.6, label='Conventional skyhook')
-    ax1.semilogx(f, mag_neg, 'k-', linewidth=2.5, label='Unsprung negative skyhook')
+    ax1.semilogx(f, mag_neg, 'k-', linewidth=2.5, label='Unsprung reverse skyhook')
 
     ax1.set_ylabel('Magnitude of Sprung acc. [dB]')
-    ax1.set_title('Fig. 5 Reproduction: Sprung Mass Acceleration')
     ax1.grid(True, which="both", linestyle='-', alpha=0.5)
     ax1.legend(loc='lower left')
     ax1.set_xlim(0.5, 20)
@@ -142,7 +141,7 @@ def reproduce_fig5_robust():
     # Bottom plot: Phase
     ax2.semilogx(f, ph_none, 'k--', linewidth=1.5, label='No control')
     ax2.semilogx(f, ph_sky, 'k-', linewidth=1.0, alpha=0.6, label='Conventional skyhook')
-    ax2.semilogx(f, ph_neg, 'k-', linewidth=2.5, label='Unsprung negative skyhook')
+    ax2.semilogx(f, ph_neg, 'k-', linewidth=2.5, label='Unsprung reverse skyhook')
 
     ax2.set_ylabel('Phase [deg]')
     ax2.set_xlabel('Frequency [Hz]')
