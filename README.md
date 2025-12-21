@@ -1,8 +1,34 @@
-# MetaLogic Channel Resources
+# MetaLogic YouTube Channel Resources
 
-This repository contains the Python simulation code accompanying the **MetaLogic** YouTube video: **Episode 2 - Reverse Skyhook Control**.
+This repository contains the simulation code and engineering resources for the **MetaLogic** YouTube channel.
 
-It simulates the frequency response of a vehicle suspension system to demonstrate the effectiveness of **Reverse Skyhook** control (academically known as *Unsprung Negative Skyhook*).
+---
+
+## Episode 3: 2-DOF Bicycle Model Frequency Response
+**File:** `Ep3.BicycleModle_YawRateGain.py`
+
+### Description
+This script simulates the lateral dynamics of a vehicle using a linear **2-Degree-of-Freedom (2-DOF) Bicycle Model**. It utilizes State-Space representation to perform a frequency response analysis.
+
+### Features
+- **State-Space Modeling:** Constructs system matrices ($A, B, C, D$) based on vehicle parameters (mass, cornering stiffness, etc.).
+- **Frequency Response:** Calculates and plots Bode diagrams using `scipy.signal`.
+- **Key Metrics:**
+  - **Yaw Rate Gain ($r/\delta$):** Analyzes the vehicle's steering response characteristics.
+  - **Sideslip Angle Gain ($\beta/\delta$):** Analyzes the vehicle's stability characteristics.
+
+### Dependencies
+- `numpy`
+- `matplotlib`
+- `scipy`
+
+---
+
+## Episode 2: Reverse Skyhook Simulation
+**File:** `MetaLogic_E2_ReverseSkyhook.py`
+
+### Description
+Simulates the frequency response of a vehicle suspension system to demonstrate the effectiveness of **Reverse Skyhook** control (academically known as *Unsprung Negative Skyhook*).
 
 ## 📄 Reference Paper
 * **Title:** Improvement of Ride Comfort by Unsprung Negative Skyhook Damper Control Using In-Wheel Motors
