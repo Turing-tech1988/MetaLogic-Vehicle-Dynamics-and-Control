@@ -1,4 +1,4 @@
-# Reverse Skyhook Simulation (MetaLogic Ep.2)
+# MetaLogic Channel Resources
 
 This repository contains the Python simulation code accompanying the **MetaLogic** YouTube video: **Episode 2 - Reverse Skyhook Control**.
 
